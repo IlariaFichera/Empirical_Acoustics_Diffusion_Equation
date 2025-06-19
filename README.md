@@ -20,9 +20,6 @@ To properly run the software in Python, the following libraries are needed:
 - time
 - os
 
-To properly run the software in Matlab, the following libraries are needed:
-- [npy-matlab](https://github.com/kwikteam/npy-matlab)
-
 ### Repository structure
 The repository consists on the following structure:
 + `Results` folder: 

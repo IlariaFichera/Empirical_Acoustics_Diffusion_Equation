@@ -1,7 +1,7 @@
-## Empirical Acoustics Diffusion Equation
-In this repository, the optimization and diffusion equation model scripts for optimizing a spatially varying diffusion coefficient are at hand.
+## Empirical Acoustic Diffusion Equation Coefficient
+In this repository, the optimization and diffusion equation model scripts for optimizing a spatially varying diffusion coefficient are at hand. This repository is the complementary material connected to the submitted paper _Fichera, I., Van hoorickx, C., Hornikx, M., An empirical diffusion coefficient function for the acoustic diffusion equation model in long rooms, Submitted to Applied Acoustics (2025)_.
 
-The software implementation of the Acoustics Diffusion Equation is part of an ongoing research in the Building Acoustics Group at the Built Environment Department of Eindhoven University of Technology.
+The software implementation of the Acoustic Diffusion Equation is part of an ongoing research in the Building Acoustics Group at the Built Environment Department of Eindhoven University of Technology.
 The main software can be found in the [GitHub Repository](https://github.com/Building-acoustics-TU-Eindhoven/Diffusion) and is currectly **UNDER DEVELOPMENT**. It is being implemented by Ilaria Fichera in Python programming language. The diffusion equation implementation of this repository is based on the numerical Finite Different Method (FDM) by Du Fort&Frankel (Navarro et al., 2012) from the main project [GitHub Repository](https://github.com/Building-acoustics-TU-Eindhoven/Diffusion).
 
 ## Setup and Usage instructions
@@ -36,7 +36,7 @@ The results from the simulation with the diffusion equation with constant diffus
 
 1. Decide which room to simulate. For example let's consider for this tutorial the room 39x3x3 $m^3$ with Source S1.5m,1.5m,1.5m, Receiver R8m,1.5m,1.5m and alpha 0.1.
 2. If you want to simulate the room 39x3x3 $m^3$ with Source S1.5m,1.5m,1.5m, Receiver R8m,1.5m,1.5m and alpha 0.1, you need to make sure that the local folder `results_rad_imp` has the Radiosity method results file of the room you are simulating. The Radiosity method results files are pre-prepared as the reference results and they are stored in each room result folder.
-3. Go to the `Results/NPR39x3x3-S1.5,1.5,1.5-Rx,1.5,1.5-alpha0.1` and copy the `results_rad_imp` folder and paste it in the `C:\....\Empirical_Acoustics_Diffusion_Equation` folder.
+3. Go to the `Results/NPR39x3x3-S1.5,1.5,1.5-Rx,1.5,1.5-alpha0.1` and copy the `results_rad_imp` folder and paste it in the `C:\....\Empirical_Acoustic_Diffusion_Equation_Coefficient` folder.
 4. Open the first python script `1-DiffEq3D.py`.
 5. In the "INPUT VARIABLE" section of the script, enter the length (x-axis), width (y-axis), heigth (z-axis) of the room you want to simulate, the source position coordinates (x_source, y_source, z_source) and the receiver position coordinates (y_rec, z_rec) in meters and the absorption coefficient (alpha_1,alpha_2 etc...). For these specific simulations, the x-axis coordinate of the receiver is not important since the objective is to calculate all the acoustic variables on a line on the x-axis. the _x_ coordinate of the source and the _x_ coordinate of the receiver cannot be the same.
 6. Press run. While running you will see printed the percentage of completion of calculation. Once arrived at 100%, some Figures will show and all the relevant results will be saved in the local folder `results_diff_imp`.

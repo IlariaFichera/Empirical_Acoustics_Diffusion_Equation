@@ -35,7 +35,7 @@ width = 3 #point y finish at the length of the room in the y direction [m] %Widt
 height = 3 #point z finish at the length of the room in the x direction [m] %Height
 
 # Source position
-x_source = 15  #position of the source in the x direction [m]
+x_source = 1.5  #position of the source in the x direction [m]
 y_source = 1.5  #position of the source in the y direction [m]
 z_source = 1.5  #position of the source in the z direction [m]
 

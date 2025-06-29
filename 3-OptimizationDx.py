@@ -42,7 +42,7 @@ def obj_fun(k):
         spl_diff = np.sqrt(A)*((spl_rec_x_t0 - SPL_t0_R)/1)
         #spl_diff[0:idx_dist3] = 0
         rt_diff = np.sqrt(B)*((t30_x - t30_x_R)/(0.05*t30_x_R))
-        #rt_diff[0:idx_dist3] = 0
+        rt_diff[0:idx_dist] = 0
         tot_length = len(spl_diff) + len(rt_diff)
         tot_diff = np.zeros((tot_length)) 
         tot_diff[0:len(spl_diff)] = spl_diff
@@ -65,7 +65,7 @@ def obj_fun(k):
         spl_diff = np.sqrt(A)*((spl_rec_x_t0 - SPL_t0_R)/1)
         
         rt_diff = np.sqrt(B)*((t30_x - t30_x_R)/(0.05*t30_x_R))
-        rt_diff[pos_source_before:pos_source_after] = 0
+        rt_diff[pos_source_before+1:pos_source_after-1] = 0
         tot_length = len(spl_diff) + len(rt_diff)
         tot_diff = np.zeros((tot_length)) 
         tot_diff[0:len(spl_diff)] = spl_diff
